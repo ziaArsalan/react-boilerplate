@@ -1,0 +1,83 @@
+@import './helpers/fonts.scss';
+@import './helpers/variables.scss';
+@import './helpers/font-size.scss';
+@import './helpers/font-wieght.scss';
+@import './helpers/spacing.scss';
+@import './helpers//color-scheme.scss';
+
+body {
+  margin: 0;
+  max-width: 1440px;
+  margin-left: auto;
+  margin-right: auto;
+  font-family: $poppins;
+  font-size: 16px;
+  font-weight: 400;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  scroll-behavior: smooth;
+}
+
+.main-heading{
+  font-family: $montserrat;
+  font-weight: 400;
+  font-size: 40px;
+}
+
+.sub-heading{
+  font-family: $helvetica;
+  font-weight: 400;
+  font-size: 24px;
+}
+
+.small-heading{
+  font-family: $poppins;
+  font-weight: 400;
+  font-size: 20px;
+}
+
+.para{
+  font-family: $poppins;
+  font-weight: 400;
+  font-size: 16px;
+}
+
+.side-menu{
+  font-family: $poppins;
+  font-weight: 400;
+  font-size: 12px;
+}
+
+.side-menu-active{
+  font-weight: 500;
+}
+
+
+/* Media Queries */
+
+/* xs */
+@media (max-width: 575px){
+  body{
+    font-size: 6vw;
+  }
+}
+/* sm */
+@media (min-width: 576px) and (max-width: 767px){
+  
+}
+/* md */
+@media (min-width: 768px) and (max-width: 991px){
+
+}
+/* lg */
+@media (min-width: 992px) and (max-width: 1199px){
+
+}
+/* xl */
+@media(min-width: 1200px){
+
+}
+/* xxl */
+@media(min-width: 1600px){
+
+}
