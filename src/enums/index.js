@@ -1,4 +1,4 @@
-import ColorScheme from './ColorScheme'
+import * as ColorScheme from './ColorScheme'
 
 export {
     ColorScheme

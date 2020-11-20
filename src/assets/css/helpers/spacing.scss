@@ -77,10 +77,26 @@ $spaceamounts: (
     90,
     100,
     110,
+    130,
     140,
-    200
+    200,
+    210,
+    219,
+    220,
+    230,
+    240,
+    250
 ); // Adjust this to include the pixel amounts you need.
 $sides: (top, bottom, left, right); // Leave this variable alone
+
+$breakpoints: 
+    "xs" '0px' '575px',
+    "sm" '576px' '767px',
+    "md" '768px' '991px',
+    "lg" '992px' '1199px',
+    "xl" '1200px' '1559px',
+    "xxl" '1600px' '2400px'
+;
 
 @each $space in $spaceamounts {
     @each $side in $sides {
@@ -99,5 +115,13 @@ $sides: (top, bottom, left, right); // Leave this variable alone
         .p#{str-slice($side, 0, 1)}-auto {
             padding-#{$side}: auto !important;
         }
+        @each $name, $minWidth, $maxWidth in $breakpoints {
+            @media (min-width: $minWidth) {
+                .m#{str-slice($side, 0, 1)}-#{$name}-#{$space}{
+                    margin-#{$side}: #{$space}px !important;
+                }
+            }
+        }
+
     }
 }

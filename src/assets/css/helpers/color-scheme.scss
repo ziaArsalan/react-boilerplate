@@ -12,7 +12,9 @@ $colors: (
     "inactiveTab"   : $inactiveTab,
 
     "label"         : $label,
-    "paragraph"     : $paragraph
+    "paragraph"     : $paragraph,
+
+    "white"         : $white
 );
 
 @each $name, $color in $colors {

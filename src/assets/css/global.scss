@@ -4,12 +4,16 @@
 @import './helpers/font-wieght.scss';
 @import './helpers/spacing.scss';
 @import './helpers//color-scheme.scss';
+@import './helpers/width.scss';
+@import './helpers/opacity.scss';
 
 body {
   margin: 0;
   max-width: 1440px;
   margin-left: auto;
   margin-right: auto;
+  padding-right: 15px;
+  padding-left: 15px;
   font-family: $poppins;
   font-size: 16px;
   font-weight: 400;
@@ -52,13 +56,26 @@ body {
   font-weight: 500;
 }
 
+.SignUp{
+  .signup-form{
+    max-width: 576px;
+    margin-top: 47px;
+  }
+  .content{
+    max-width: 473px;
+  }
+}
+
 
 /* Media Queries */
 
 /* xs */
 @media (max-width: 575px){
   body{
-    font-size: 6vw;
+    font-size: 4vw;
+  }
+  .main-heading{
+    font-size: 7vw;
   }
 }
 /* sm */
