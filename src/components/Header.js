@@ -1,7 +1,7 @@
 import React from 'react'
 import { ColorScheme } from '../enums'
 
-function WalletlyHeader() {
+function Header() {
     return (
         <div className="WalletlyHeader ml-xs-15 mr-xs-15 ml-md-100">
             <div className="mt-26 mb-26">
@@ -12,4 +12,4 @@ function WalletlyHeader() {
     )
 }
 
-export default WalletlyHeader
+export default Header

@@ -12,7 +12,7 @@ const useStyles = makeStyles(theme => ({
   },
 }));
 
-export default function ContainedButtons(props) {
+export default function CustomButton(props) {
   const propsObj = {className: props.className, ...props}
   const classes = useStyles(props);
   const customClass = propsObj.className

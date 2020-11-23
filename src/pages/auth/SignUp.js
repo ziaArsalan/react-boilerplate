@@ -1,20 +1,19 @@
 import React from 'react'
-import WalletlyHeader from '../../components/WalletlyHeader'
+import Header from '../../components/Header'
 import { ColorScheme } from '../../enums'
-import CustomizedInputs from '../../components/CutomTextField'
-import ContainedButtons from '../../components/CustomButton'
-import { ColorSchemeClass } from '../../enums/ColorScheme'
+import CustomizedInput from '../../components/CutomTextField'
+import CustomButton from '../../components/CustomButton'
 
 function SignUp() {
     return (
-        <div className="SignUp">
-            <WalletlyHeader />
+        <div id="SignUp">
+            <Header />
             <div className="ml-md-219 ml-xs-20 mr-xs-20">
                 <div className="row">
                     <div className="col-lg-6">
                         <form className="signup-form">
-                            <div className={ ColorScheme.ColorSchemeClass[333333] + 'main-heading' }>Welcome to Walletly</div>
-                            <div className={ ColorScheme.ColorSchemeClass["4f4f4f"] + 'content mt-10'}>
+                            <div className="main-heading color-text">Welcome to Walletly</div>
+                            <div className="content mt-10 color-subText">
                                 Find your people. Engage your customers. Build your brand.
                                 Do it all with Walletly. Already have a account? Log in
                             </div>
@@ -22,7 +21,7 @@ function SignUp() {
                             <div className="container px-0 mt-8">
                                 <div className="row">
                                     <div className="col-md-6 pr-md-8">
-                                        <CustomizedInputs 
+                                        <CustomizedInput 
                                             className="w-100 mt-30"
                                             id="firstname"
                                             label="First name"
@@ -33,7 +32,7 @@ function SignUp() {
                                         />
                                     </div>
                                     <div className="col-md-6 pl-md-8">
-                                        <CustomizedInputs 
+                                        <CustomizedInput 
                                             className="w-100 mt-30"
                                             id="firstname"
                                             label="First name"
@@ -49,7 +48,7 @@ function SignUp() {
                             <div className="container px-0">
                                 <div className="row">
                                     <div className="col">
-                                        <CustomizedInputs 
+                                        <CustomizedInput 
                                             className="w-100 mt-30"
                                             id="firstname"
                                             label="First name"
@@ -65,7 +64,7 @@ function SignUp() {
                             <div className="container px-0">
                                 <div className="row">
                                     <div className="col">
-                                        <CustomizedInputs 
+                                        <CustomizedInput 
                                             className="w-100 mt-30"
                                             id="firstname"
                                             label="Password"
@@ -80,19 +79,19 @@ function SignUp() {
 
                             <div className="container side-menu px-0 mt-30">
                                 <div className="row">
-                                    <div className={ ColorSchemeClass[333333] + "col-md-5 opacity-5" }>
+                                    <div className="col-md-5 opacity-5 color-text">
                                         • One lowercase character<br/>
                                         • One uppercase character<br/>
                                         • One number
                                     </div>
-                                    <div className={ ColorSchemeClass[333333] + "col-md-5 opacity-5" }>
+                                    <div className="col-md-5 opacity-5 color-text">
                                         • One special character<br/>
                                         • 8 characters minimum
                                     </div>
                                 </div>
                             </div>
 
-                            <ContainedButtons 
+                            <CustomButton 
                                 className="w-100 mt-40 mb-60"
                                 color={ ColorScheme.ColorSchemeCode.signupBtn }
                                 btnText="Signup"

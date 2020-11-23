@@ -36,7 +36,7 @@ const useStylesLabelElement = makeStyles(() => ({
   }
 }));
 
-export default function CustomizedInputs(props) {
+export default function CustomizedInput(props) {
   const classes = useStylesElement();
   const inputClasses = useStylesInputElement();
   const labelClasses = useStylesLabelElement();

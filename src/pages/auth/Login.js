@@ -5,7 +5,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 
 function Login() {
     return (
-        <div id="login-page">
+        <div id="Login">
             <div class="container">
                 <div class="row">
                     <div class="col-lg-6" id="div1">
