@@ -120,6 +120,9 @@ $breakpoints:
                 .m#{str-slice($side, 0, 1)}-#{$name}-#{$space}{
                     margin-#{$side}: #{$space}px !important;
                 }
+                .p#{str-slice($side, 0, 1)}-#{$name}-#{$space}{
+                    padding-#{$side}: #{$space}px !important;
+                }
             }
         }
 
