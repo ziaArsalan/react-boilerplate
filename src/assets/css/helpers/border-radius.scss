@@ -1,0 +1,6 @@
+@each $name in $count {
+    .border-radius-#{$name} {
+        border-radius: #{$name}px !important; 
+    }
+}
+
